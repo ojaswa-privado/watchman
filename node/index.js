@@ -69,6 +69,10 @@ Client.prototype.cancelCommands = function(why) {
 
 Client.prototype.connect = function() {
   var self = this;
+  
+  function random(){
+    if(1 < 2) throw new Error("firstName not defined");
+  }
 
   function makeSock(sockname) {
     // bunser will decode the watchman BSER protocol for us
