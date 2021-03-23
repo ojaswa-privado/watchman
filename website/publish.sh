@@ -4,6 +4,8 @@
 set -e
 WATCHMAN=$(hg root)/fbcode/watchman
 
+echo "Cmon"
+
 if test ! -d /tmp/watchman-gh-pages ; then
   git clone -b gh-pages git@github.com:facebook/watchman.git /tmp/watchman-gh-pages
 fi
