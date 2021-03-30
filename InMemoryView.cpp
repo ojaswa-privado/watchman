@@ -40,6 +40,7 @@ void InMemoryFileResult::batchFetchProperties(
   // If we fail to do so, the continuation on the futures that we
   // schedule will access invalid memory and we'll all feel bad.
   SCOPE_EXIT {
+      cout<<"boo"
     if (!readlinkFutures.empty()) {
       folly::collectAll(readlinkFutures.begin(), readlinkFutures.end()).wait();
     }
