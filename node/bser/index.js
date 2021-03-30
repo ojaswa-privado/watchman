@@ -36,6 +36,9 @@ Accumulator.prototype.readAvail = function() {
   return this.writeOffset - this.readOffset;
 }
 
+const test = () => {
+}
+
 // Ensure that we have enough space for size bytes
 Accumulator.prototype.reserve = function(size) {
   if (size < this.writeAvail()) {
