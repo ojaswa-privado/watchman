@@ -7,6 +7,8 @@ var os = require('os');
 var assert = require('assert');
 var Int64 = require('node-int64');
 
+var damn = "damn";
+
 // BSER uses the local endianness to reduce byte swapping overheads
 // (the protocol is expressly local IPC only).  We need to tell node
 // to use the native endianness when reading various native values.
